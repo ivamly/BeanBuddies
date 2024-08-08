@@ -1,0 +1,48 @@
+/* /css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f1; /* Светло-бежевый фон, похожий на цвет кофе с молоком */
+}
+
+header {
+    background-color: #6f4e28; /* Темно-коричневый, кофейный цвет */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+a {
+    color: #d2691e; /* Светло-коричневый, теплый оттенок */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#coffee-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px; /* Устанавливаем максимальную ширину для лучшего отображения */
+}
+
+#coffee-list li {
+    padding: 12px;
+    border-bottom: 1px solid #d2b48c; /* Светло-коричневый, похожий на цвет кофе */
+    background-color: #fff; /* Белый фон для элементов списка */
+}
+
+#coffee-list li:last-child {
+    border-bottom: none;
+}
+
+header a {
+    color: #f5deb3; /* Светло-кремовый цвет для ссылок в шапке */
+}

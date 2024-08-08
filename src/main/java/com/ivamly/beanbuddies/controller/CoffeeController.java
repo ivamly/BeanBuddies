@@ -24,14 +24,12 @@ public class CoffeeController {
     @GetMapping("/all")
     public ResponseEntity<Page<Coffee>> getAllCoffees(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size,
-            @RequestParam(defaultValue = "id,asc") String[] sort) {
+            @RequestParam(defaultValue = "10") int size) {
 
-        // Create Sort object based on request parameters
-        Sort sortOrder = Sort.by(sort[0], sort[1].toUpperCase());
-        Pageable pageable = PageRequest.of(page, size, sortOrder);
+        Pageable pageable = PageRequest.of(page, size, Sort.unsorted());
 
         Page<Coffee> coffees = coffeeService.findAllCoffees(pageable);
+
         return ResponseEntity.ok(coffees);
     }
 
