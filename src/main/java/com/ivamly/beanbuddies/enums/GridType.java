@@ -1,4 +1,4 @@
-package com.ivamly.beanbuddies.model;
+package com.ivamly.beanbuddies.enums;
 
 public enum GridType {
     BEAN,

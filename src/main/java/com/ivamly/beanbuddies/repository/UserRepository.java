@@ -1,7 +1,10 @@
 package com.ivamly.beanbuddies.repository;
 
-import com.ivamly.beanbuddies.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.ivamly.beanbuddies.entity.User;
+
+import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByUsername(String username);
 }
